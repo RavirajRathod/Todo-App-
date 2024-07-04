@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,303 @@
   to {
     transform: rotate(360deg);
   }
+} */
+body {
+  background-color: #373737;
+}
+
+.reg {
+  text-decoration: none;
+  color: white;
+}
+
+.register,
+.login {
+  max-width: 600px;
+  min-width: 300px;
+  margin-top: 50px;
+  box-shadow: 0px 5px 5px 0;
+  border-radius: 1%;
+  padding: 40px;
+  background-color: #222222;
+}
+
+#user,
+#email,
+#pass,
+#cpass {
+  color: rgb(255, 55, 55);
+  margin-top: 2px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+.reg_title,
+.reg_btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rbtn,
+.lbtn {
+  margin-top: 20px;
+  width: 130px;
+  height: 50px;
+  font-size: 18px;
+  background-color: rgb(229, 27, 78);
+}
+
+.register input,
+.login input {
+  background-color: rgb(210, 222, 232);
+}
+
+.navbar {
+  background-color: #252525;
+}
+
+
+
+.todo {
+  margin-left: 20px;
+}
+
+.btn {
+  margin-right: 20px;
+}
+
+.logout {
+  width: 100px;
+  height: 40px;
+}
+
+.mode {
+  background-color: #252525;
+  border: none;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.home,
+.about,
+.alltodo {
+  border: none;
+  font-size: 18px;
+
+}
+
+.links {
+  /* position: absolute; */
+  /* left: 650px; */
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.links a {
+  position: relative;
+  letter-spacing: 0.5px;
+  width: 50px;
+
+}
+
+.links a::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: rgb(255, 251, 0);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #252525;
+}
+
+.mytodo {
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.addnoteinput {
+  width: 1100px;
+  height: 60px;
+
+}
+
+.addbutton {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  color: aliceblue;
+  height: 50px;
+  width: 70px;
+  background-color: rgb(5, 172, 255);
+  border: solid 2px rgb(5, 172, 255);
+  border-radius: 5px;
+}
+
+.addbutton:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(5, 172, 255);
+}
+
+.note {
+  display: flex;
+  justify-content: end;
+  min-width: 200px;
+  width: 1100px;
+  position: relative;
+}
+
+.notes {
+  width: 350px;
+  min-height: 200px;
+  border-radius: 5px;
+  background-color: rgb(240, 225, 144);
+  padding: 20px;
+  position: relative;
+  margin-right: 12px;
+}
+
+.buttons button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  font-size: 22px;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.notediv {
+  /* margin-left: 90px; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 1110px;
+  margin-bottom: 20px;
+}
+
+.notediv h3 {
+  margin: auto;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1100px;
+}
+
+.todotitle {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.aboutt::after {
+  content: '';
+  height: 3px;
+  width: 100%;
+  background-color: rgb(228, 228, 7);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.todolist {
+  background-color: #252525;
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+
+.textstatus {
+  width: 110px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.logoutmenu {
+  display: flex;
+  justify-content: center;
+  width: 1600px;
+  min-width: 500px;
+  height: 1000px;
+  position: fixed;
+  top: 0;
+  background-color: #3737379a;
+  z-index: 1;
+}
+
+.logoutpopup {
+  background-color: #222222;
+  width: 550px;
+  height: 250px;
+  position: fixed;
+  top: 250px;
+  display: flex;
+  align-self: center;
+  border-radius: 10px;
+  color: aliceblue;
+  padding: 20px;
+}
+
+.cancel,
+.logoutbtn {
+  height: 35px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+}
+
+.logoutconfirm {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  bottom: 20px;
+  right: 20px;
+}
+
+.active {
+  border-bottom: solid 3px yellow;
+}
+
+.page {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.loading {
+  margin-top: 100px;
+  text-align: center;
+  color: aliceblue;
+  font-size: 20px;
 }
